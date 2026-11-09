@@ -1,0 +1,184 @@
+{
+  "_readme": "SEMUA kalimat game ada di sini. Edit, lalu jalankan: node tools/patch.mjs",
+  "_panduan": {
+    "z": "Isi cerita lengkap: judul, nama, surat, harapan, caption foto/lagu, dialog Moci. Placeholder seperti {recipient} {sender} {left} {next} JANGAN dihapus â€” itu diisi otomatis oleh game.",
+    "outside": "Teks di luar objek cerita: badge judul, footer, judul tab browser, meta description.",
+    "theme": "Set enabled:false untuk mematikan lapisan tema warna."
+  },
+  "z": {
+    "title": "Your Little Birthday Adventure",
+    "logo": [
+      "Your Little",
+      "Birthday",
+      "Adventure"
+    ],
+    "year": 2026,
+    "recipient": "Istii",
+    "sender": "Faraz gamtenk",
+    "photos": [
+      {
+        "title": "Main Character Moment",
+        "caption": "Okay, harus diakui yang ini soo cakep. harus jadi BA Shampoo kamuu wkwkw"
+      },
+      {
+        "title": "The Side Eye",
+        "caption": "Luw ngelirik apa bos? nglirik gwh yang gamtenk baik ini kah? What's on your mind, miss?"
+      },
+      {
+        "title": "Centil Activated",
+        "caption": "Ada aja tingkahnya. Kayaknya kamera nyala dikit langsung punya banyak gaya WKWK."
+      },
+      {
+        "title": "Oopsie Daisy!",
+        "caption": "Nobody's perfect, OoOpss. Iyelahh tuu"
+      },
+      {
+        "title": "A Mahadasyat Creature",
+        "caption": "Oh nooo, I'm literally out of words deymm. You're perfect and gorgeouss"
+      },
+      {
+        "title": "Unfiltered Edition",
+        "caption": "The most authentic version. No filter, no explanation.. Just pure Istii being Istii."
+      }
+    ],
+    "videos": [
+      {
+        "title": "Istii's Mini Concert 🎤",
+        "caption": "When Istii suddenly becomes a singer WKWK.. TYSMM Sudah bernyanyi untuk faraz gamntenk maap dulu kesannya maksa hehe.."
+      },
+      {
+        "title": "MLBB Main Character Era",
+        "caption": "A little MLBB aesthetic moment. Gelooo sihh keren kamu ngeditnya, JOSJIS abiss AHAHA"
+      }
+    ],
+    "songs": [
+      {
+        "title": "Love Songs",
+        "artist": "Kaash Paige",
+        "file": "01-love-song.mp3",
+        "caption": "One of your favorites, and honestly, it suits your vibe. There's just something about this song that feels so you. No wonder you love it!"
+      },
+      {
+        "title": "Best Part",
+        "artist": "Daniel Caesar ft. H.E.R.",
+        "file": "02-bestpart.mp3",
+        "caption": "Another one from your playlist! I guess everyone has that one song they never get tired of, and this one's definitely one of yours."
+      },
+      {
+        "title": "Risk It All",
+        "artist": "Bruno Mars",
+        "file": "03-risk-it-all.mp3",
+        "caption": "Your music taste has its own little personality, and this one is proof. A whole different vibe, but somehow still so you."
+      },
+      {
+        "title": "Daylight",
+        "artist": "Taylor Swift",
+        "file": "04-daylight.mp3",
+        "caption": "This one's my pick for you. I don't know how to explain it, but it reminds me of the kind of brightness you bring. Hope life gives you plenty of daylight, even on the cloudy days."
+      },
+      {
+        "title": "Destiny",
+        "artist": "LANY",
+        "file": "05-destiny-lany.mp3",
+        "caption": "And here's another one from me. Maybe it's the title, maybe it's the feeling, but it reminds me of our little journey from SMP until now. Funny how far we've come, right?"
+      }
+    ],
+    "backsound": {
+      "file": "00-backsound.mp3",
+      "title": "Backsound utama",
+      "artist": "Musik latar petualangan"
+    },
+    "letterTitle": "Buat IstiiI, HERONYA WATES",
+    "letter": [
+      "Haii, Istiii,",
+      "Happy birthday yaa! Ngga kerasa kita udah kenal dari SMP kelas 1 sampai udah lulus sekolah aja yaa. Time really fastt, beuhh...",
+      "Dari chat bercanda sama mabar emel sampai malam mana belom glory lagi WKWKW.. Sekarang fokus kuliah nya yea kejar mimpinya sampai terwujud oke.",
+      "Makasii yea udah sabar sama faraz gamtenk, udah ketawa sama my jokes garing, dan udah bikin hari-hari biasa jadi berasa bosq. Makanya jangan ngerasa ga enakan yea.",
+      "Aku ngga bisa janji semuanya bakal selalu gampang. Tapi aku bakal terus bantu apapun kesulitanmu selagi aku bisa yea. Pelan-pelan aja, yang penting kamu udah lebih baik dari kemarin.",
+      "Jangan terlalu keras sama diri sendiri, ya. Ngga semua harus langsung berhasil and ngga harus berjalan sesuai rencana. Take your time, enjoy the process and don't forget to have fun along the way.",
+      "Sekali lagi, happy birthday, Istiii. Terimakasih sudah menjadi bagian dari salah satu manusia yang ada di bumi yang fana ini."
+    ],
+    "secondMessageTitle": "Pesan kedua: buat se",
+    "wishes": [
+      "Semoga perjalanan kuliahnya lancar ya, ketemu banyak orang baik contohnya gwh, dan dapat pengalaman yang berguna buat masa depan. Good luck with your new chapter!",
+      "Semoga semua target yang lagi kamu usahakan satu per satu tercapai. Kalau ada hari yang ngga berjalan sesuai rencana, semoga kamu tetap punya semangat buat mencoba lagi.",
+      "Semoga kita masih punya banyak kesempatan buat bikin cerita random baru. More trips, more laughs, more stupid conversations, and more memories to look back on someday.",
+      "Jangan lupa menikmati masa-masa sekarang. We're not getting younger, so make every little moment count. WKWKWK."
+    ],
+    "finalTitle": "Selamat ulang tahun, Istii!",
+    "finalMessage": "Banyak cerita yang udah lewat, banyak hal yang berubah, dan pastinya masih banyak hal yang belum kita tahu bakal terjadi ke depannya. Semoga tahun ini jadi salah satu chapter terbaik dalam hidupmu. Keep growing, keep exploring, and keep being yourself. Thanks for all the memories so far, Istii. Don't forget to make more!",
+    "guide": {
+      "name": "Moci",
+      "controls": {
+        "touch": [
+          "Jalan pakai tombol â† â†’, terus lompat pakai tombol â†‘.",
+          "Ketuk E di dekat benda yang berkilau. Santai aja, nggak usah buru-buru!"
+        ],
+        "keys": [
+          "Jalan pakai A/D atau â† â†’, terus lompat pakai SPASI.",
+          "Tekan E di dekat benda yang berkilau. Santai aja, nggak usah buru-buru!"
+        ]
+      },
+      "lines": {
+        "gardenHello": [
+          "Hiii, {recipient}! Welcome to your little birthday adventure! Aku {name}, kelinci kecil yang hari ini ditugasin jadi tour guide kamu. Hehe!",
+          "Your favorite human, {sender}, udah nyiapin sesuatu buat kamu. Ada {photos} foto, {videos} video, {songs} lagu, dan {letters} surat. Banyak juga, ya!",
+          "Everything you discover will go straight into your treasure chest. Don't worry, it's all yours!",
+          "Let's start with the mailbox beside me. There's a little letter waiting for you. The gate will open after you read it!",
+          "{controls}"
+        ],
+        "gardenOpen": [
+          "Yayyy! The gate is open! Masih ada {left} treasure yang harus kamu temuin. Keep going, {recipient}!"
+        ],
+        "gardenDone": [
+          "Look at you! Taman ini udah selesai! Sekarang lanjut ke kanan, there's more waiting for you!"
+        ],
+        "hillMailbox": [
+          "Psst! Kamu berhasil sampai puncak! Ada pesan kedua dari {sender} di mailbox itu. I think you'll love it!"
+        ],
+        "hillMissing": [
+          "Eits, jangan buru-buru! Masih ada {left} treasure yang belum ketemu. Check your treasure chest!"
+        ],
+        "hillDone": [
+          "Woohoo! Bukitnya udah selesai! Next stop: Pohon Perayaan! Let's gooo!"
+        ],
+        "treeMissing": [
+          "Almost there, {recipient}! Tinggal {left} lagi. You got this!",
+          "Psst, coba cek peti hartamu. Maybe there's a little clue in there!"
+        ],
+        "treeReady": [
+          "OMG! You found everything! {sender} is waiting for you under that tree.",
+          "Sekarang berdiri di sebelahnya, terus {act}. Smileee! This moment deserves a picture!"
+        ],
+        "treeWalk": [
+          "Awww, the picture is ready! {sender} lagi nunggu di gerbang cahaya. Go find him!"
+        ],
+        "treeAfter": [
+          "Look at that picture! So cute! Happy birthday, {recipient}! You two look adorable together! ♥"
+        ],
+        "arrivalHill": [
+          "Welcome to Memory Hill! Ada {left} treasure di sini. Aku tunggu di ujung sana, okay?"
+        ],
+        "arrivalTree": [
+          "We're almost at the end! Tinggal {left} lagi. {sender} udah nunggu di bawah pohon itu!"
+        ],
+        "arrivalDone": [
+          "Everything is collected! You've done an amazing job. Now, let's go to the right!"
+        ],
+        "tips": [
+          "Your next little adventure: {next}"
+        ]
+      }
+    }
+  },
+  "outside": {
+    "welcomeSeparator": ">",
+    "titleFooter": "Â© 2026 FARAZ GAMTENK Â· UNTUK ISTIIII,,",
+    "htmlTitle": "Our Little Birthday Adventure",
+    "metaDescription": "Our Little Birthday Adventure: game 8-bit kecil dari Faraz gamtenk, khusus buat Istii. Happy birthday!"
+  },
+  "theme": {
+    "enabled": true,
+    "href": "/theme-faraz.css"
+  }
+}
