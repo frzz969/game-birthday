@@ -1,0 +1,10 @@
+# Backup art asli (dibuat otomatis oleh swap-assets)
+assets-backup/
+
+# File sementara
+tmp_dl/
+tmp_page.html
+tools/_probe*.mjs
+tools/_upd*.py
+tools/_fix*.py
+tools/_sig.py
