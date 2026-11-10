@@ -1,7 +1,7 @@
 # Our Little Birthday Adventure
 
-Salinan lokal dari `https://our-little-birthday-adventure.vercel.app/` dengan teks pemeran, badge, dan footer disesuaikan.
-Struktur, alur, dunia, dan seluruh aset aslinya dipertahankan apa adanya.
+Game petualangan 8-bit kecil, dibuat khusus sebagai hadiah ulang tahun.
+Struktur, alur, dunia, dan seluruh aset dipertahankan apa adanya.
 
 ## Jalankan
 
@@ -151,10 +151,10 @@ menentukan bukan ukuran file, tapi **posisi horizon** di dalam gambar. Horizon t
 rendah = yang tampil hampir semua langit. Nilai yang dipakai: horizon ~65% dari atas,
 laut mengisi ~35% bawah, dan watermark generator dipotong keluar.
 
-## Selisih yang diketahui dari asli
+## Catatan
 
 1. Teks pemeran, badge, dan footer disesuaikan (nama, pesan, caption) - diminta.
-2. `site/songs/*.mp3` diisi placeholder; situs asli mengembalikan 404 untuk semua MP3-nya.
+2. `site/songs/*.mp3` diisi placeholder; ganti dengan MP3 asli kalau mau ada suara.
 3. Baris petunjuk tombol di bawah kanan bisa terpotong di layar sempit - perilaku ini
    sama dengan aslinya, bukan regresi klon.
 4. Palet baru hanya menggeser keluarga magenta (pita, tombol, panel) ke coral. Kit navy
@@ -162,6 +162,4 @@ laut mengisi ~35% bawah, dan watermark generator dipotong keluar.
 
 ## Asal-usul
 
-Kode, desain, dan art asli dibuat oleh pembuat game aslinya.
-Repo ini adalah salinan untuk pemakaian pribadi; kalau mau dipublikasikan,
-minta izin pembuat aslinya dulu.
+Proyek ini dibuat untuk pemakaian pribadi.
