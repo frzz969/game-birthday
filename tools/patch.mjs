@@ -118,7 +118,7 @@ const rules = [
   },
   {
     file: 'bundle',
-    label: 'signature "Yang sayang kamu" -> "Yur longtime bro"',
+    label: 'signature "Yang sayang kamu" -> "Your longtime bro"',
     find: 'Yang sayang kamu,',
     replace: 'Your longtime bro,',
     expect: 1,
