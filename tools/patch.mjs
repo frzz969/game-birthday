@@ -116,6 +116,13 @@ const rules = [
     replace: 'content=' + q(outside.metaDescription),
     expect: 1,
   },
+  {
+    file: 'bundle',
+    label: 'signature "Yang sayang kamu" -> "Yur longtime bro"',
+    find: 'Yang sayang kamu,',
+    replace: 'Yur longtime bro,',
+    expect: 1,
+  },
 ];
 
 // Kata yang tidak boleh tersisa di hasil akhir.
