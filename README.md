@@ -1,7 +1,7 @@
-# Our Little Anniversary Adventure — versi Faraz × Istii
+# Our Little Birthday Adventure
 
-Salinan lokal dari `https://our-little-birthday-adventure.vercel.app/` dengan nama pemeran, badge, dan footer diganti.
-Struktur, alur, dunia, dan seluruh asset aslinya dipertahankan apa adanya.
+Salinan lokal dari `https://our-little-birthday-adventure.vercel.app/` dengan teks pemeran, badge, dan footer disesuaikan.
+Struktur, alur, dunia, dan seluruh aset aslinya dipertahankan apa adanya.
 
 ## Jalankan
 
@@ -46,7 +46,7 @@ node tools/embed-kits.mjs     # tanam jadi --kit-* di site/theme-faraz.css
 ```
 
 `embed-kits.mjs` idempoten: isi blok penanda diganti, bukan ditumpuk. Dua varian
-(`:root` dan `@media(max-width:700px),(max-height:600px)`) dijaga terpisah —
+(`:root` dan `@media(max-width:700px),(max-height:600px)`) dijaga terpisah -
 kalau tertukar, 9-slice gepeng di layar kecil.
 
 Hasilnya: keluarga magenta (pita judul, tombol, panel) jadi coral hangat.
@@ -55,7 +55,7 @@ Kit navy (kotak dialog, tombol ikon) sengaja dibiarkan gelap supaya teks tetap k
 - Matikan: set `"theme": { "enabled": false }` di `content/content.json`, lalu `node tools/patch.mjs`.
 - Hapus permanen: hapus baris `<link rel="stylesheet" href="/theme-faraz.css">` di `site/index.html`.
 
-Link tema dipasang oleh `patch.mjs`, bukan diedit manual — supaya tidak hilang setiap kali patch dijalankan.
+Link tema dipasang oleh `patch.mjs`, bukan diedit manual - supaya tidak hilang setiap kali patch dijalankan.
 
 
 ## Edit teks
@@ -69,7 +69,7 @@ node tools/patch.mjs
 ```
 
 Cara kerjanya: seluruh objek cerita (`const Z={...}` di bundle) **diganti utuh**
-dengan bagian `"z"` dari `content.json`. Jadi tidak ada lagi teks yang terkunci —
+dengan bagian `"z"` dari `content.json`. Jadi tidak ada lagi teks yang terkunci -
 surat, harapan, caption foto, dialog Moci, semuanya bisa diedit dari satu file.
 
 Sisanya (`"outside"`) menangani teks yang berada di luar objek cerita:
@@ -80,38 +80,41 @@ Sisanya (`"outside"`) menangani teks yang berada di luar objek cerita:
 | `outside.titleFooter` | Baris footer layar judul |
 | `outside.htmlTitle` | Judul tab browser |
 | `outside.metaDescription` | Meta description |
+| `outside.treeBanner` | Banner teks di atas pohon (layar akhir) |
+| `outside.replyMeUrl` | Link WhatsApp tombol "Reply Me" |
+| `outside.replyMeMessage` | Pesan otomatis yang terisi di WhatsApp |
 
-Karena selalu mulai dari `tools/pristine/`, hasilnya idempoten — jalankan berapa kali pun sama.
+Karena selalu mulai dari `tools/pristine/`, hasilnya idempoten - jalankan berapa kali pun sama.
 Kalau ada pola yang tidak ketemu, skrip **gagal** dan memberi tahu, bukan diam-diam melewati.
 
 ## Ganti foto & lagu dengan milik sendiri
 
 Game ini mencari berkas di lokasi tetap:
 
-- Foto: `site/assets/journey/photo-1.webp` … `photo-6.webp` (736×552) + `photo-N-thumb.webp` (256×256)
+- Foto: `site/assets/journey/photo-1.webp` .. `photo-6.webp` (736x552) + `photo-N-thumb.webp` (256x256)
 - Video: `site/assets/journey/video-1.mp4`, `video-2.mp4`
-- Lagu: `site/songs/01-…mp3` … `05-…mp3` dan `site/songs/00-backsound.mp3`
+- Lagu: `site/songs/01-.mp3` .. `05-.mp3` dan `site/songs/00-backsound.mp3`
 - Foto bareng di akhir: `site/assets/journey/photo-6.webp`
 
 Cukup timpa berkasnya dengan nama yang sama (jaga rasio biar tidak gepeng), lalu refresh.
-Catatan: `site/songs/*.mp3` saat ini berisi salinan `song-1.wav` sebagai placeholder —
+Catatan: `site/songs/*.mp3` saat ini berisi salinan `song-1.wav` sebagai placeholder -
 ganti dengan MP3 asli kalau mau ada suara.
 
-## Art baru (cadangan — TIDAK dipakai)
+## Art baru (cadangan - TIDAK dipakai)
 
 **Status sekarang: art ASLI yang aktif.** Art baru disimpan sebagai cadangan.
 Alasannya: langit baru lebih pucat dan awannya jauh lebih kasar, sementara sprite
-baru gayanya beda sendiri dibanding Peach & Sky Blue — di kartu outfit kelihatan
+baru gayanya beda sendiri dibanding Peach & Sky Blue - di kartu outfit kelihatan
 tidak satu keluarga. Art asli menang secara visual.
 
 `assets-new/` berisi art baru bergaya pixel 16-bit dengan palet rose-gold:
 
 | Berkas | Isi |
 |---|---|
-| `sky-new.webp` | Langit sunrise 1672×941, horizon di ~65% (sama seperti aslinya) |
-| `hero-new.webp` | Sprite 5 frame 1983×793, diposisikan presisi ke kotak frame game |
-| `Cute_pixel_art_portrait_…png` | Avatar kelinci Moci (belum dipasang) |
-| `Pixel_art_game_prop_…png` | Kotak pos (belum dipasang) |
+| `sky-new.webp` | Langit sunrise 1672x941, horizon di ~65% (sama seperti aslinya) |
+| `hero-new.webp` | Sprite 5 frame 1983x793, diposisikan presisi ke kotak frame game |
+| `Cute_pixel_art_portrait_.png` | Avatar kelinci Moci (belum dipasang) |
+| `Pixel_art_game_prop_.png` | Kotak pos (belum dipasang) |
 | `preview-hero.png`, `preview-sky2.png` | Pratinjau |
 
 ```bash
@@ -127,11 +130,11 @@ Game mengambil 5 frame dari satu gambar dengan koordinat tetap (array `boxes` di
 Kalau gambar pengganti tidak menaruh karakter di koordinat itu, hasilnya karakter mengecil,
 melayang, atau terpotong. `tools/build-hero.mjs` menyelesaikannya:
 
-1. key out latar hijau (`colorkey`), **bukan** `chromakey` — hijau hasil generator biasanya
+1. key out latar hijau (`colorkey`), **bukan** `chromakey` - hijau hasil generator biasanya
    bukan `#00FF00` (punya sheet ini `#379b3d`, bisa diatur lewat env `KEY_COLOR`)
 2. hitung bounding box tiap karakter dari kanal alpha
 3. skala tiap frame ke tinggi kotaknya, rata bawah, tengah horizontal
-4. tempel ke kanvas transparan 1983×793
+4. tempel ke kanvas transparan 1983x793
 
 ```bash
 node tools/build-hero.mjs assets-new/<sheet>.png
@@ -139,7 +142,7 @@ node tools/build-hero.mjs assets-new/<sheet>.png
 
 Catatan penting: generator gambar kadang menggambar **pola kotak-kotak "transparan" palsu**
 ke dalam PNG. Kalau itu terjadi, alpha-nya tidak nyata dan harus di-generate ulang dengan
-latar hijau solid — bukan di-key dari pola kotak.
+latar hijau solid - bukan di-key dari pola kotak.
 
 ### Langit
 
@@ -150,15 +153,15 @@ laut mengisi ~35% bawah, dan watermark generator dipotong keluar.
 
 ## Selisih yang diketahui dari asli
 
-1. Nama, badge (`FARAZ GAMTENK > ISTII`), dan footer (`© 2026 FARAZ GAMTENK · UNTUK ISTIIII,,`) — diminta.
+1. Teks pemeran, badge, dan footer disesuaikan (nama, pesan, caption) - diminta.
 2. `site/songs/*.mp3` diisi placeholder; situs asli mengembalikan 404 untuk semua MP3-nya.
-3. Baris petunjuk tombol di bawah kanan bisa terpotong di layar sempit — perilaku ini
+3. Baris petunjuk tombol di bawah kanan bisa terpotong di layar sempit - perilaku ini
    sama dengan aslinya, bukan regresi klon.
 4. Palet baru hanya menggeser keluarga magenta (pita, tombol, panel) ke coral. Kit navy
-   (kotak dialog, tombol ikon) tetap plum gelap — sengaja, supaya teks tetap kontras.
+   (kotak dialog, tombol ikon) tetap plum gelap - sengaja, supaya teks tetap kontras.
 
 ## Asal-usul
 
-Kode, desain, dan art asli dibuat oleh pembuat `our-little-birthday-adventure`.
+Kode, desain, dan art asli dibuat oleh pembuat game aslinya.
 Repo ini adalah salinan untuk pemakaian pribadi; kalau mau dipublikasikan,
 minta izin pembuat aslinya dulu.
