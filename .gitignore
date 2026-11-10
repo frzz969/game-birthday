@@ -8,3 +8,4 @@ tools/_probe*.mjs
 tools/_upd*.py
 tools/_fix*.py
 tools/_sig.py
+scratchpad/
