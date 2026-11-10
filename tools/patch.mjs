@@ -32,6 +32,9 @@ if (!outside) throw new Error('content.json: bagian "outside" tidak ada.');
 if (typeof outside.treeBanner !== 'string' || outside.treeBanner.trim() === '') {
   throw new Error('content.json: "outside.treeBanner" tidak ada atau kosong — banner tidak boleh disuntik "undefined".');
 }
+if (typeof outside.replyMeUrl !== 'string' || outside.replyMeUrl.trim() === '') {
+  throw new Error('content.json: "outside.replyMeUrl" tidak ada atau kosong — tombol Reply Me tidak boleh disuntik "undefined".');
+}
 
 const q = JSON.stringify;
 
@@ -107,6 +110,12 @@ const rules = [
   },
   {
     file: 'bundle',
+    label: 'ending-links: tambah tombol Reply Me (full-width, centered)',
+    find: 'children:"Kredit \u25b8"})]})',
+    replace: 'children:"Kredit \u25b8"}),c.jsx("a",{className:"secondary reply-me",href:' + q(outside.replyMeUrl) + ',target:"_blank",rel:"noopener noreferrer",style:{display:"block",width:"100%",textAlign:"center",marginTop:"8px"},children:"Reply Me"})]})',
+    expect: 1,
+  },
+  {
     label: '"di hari birthday kita" -> "di hari ulang tahun kita"',
     find: 'di hari birthday kita',
     replace: 'di hari ulang tahun kita',
