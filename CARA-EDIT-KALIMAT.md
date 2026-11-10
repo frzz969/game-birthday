@@ -4,7 +4,7 @@ Semua kalimat ada di **satu file**: `content/content.json`.
 Setelah diedit, jalankan satu perintah. Selesai.
 
 ```bash
-cd "E:/folder projek vs code/faraz-istii-game"
+cd "E:/folder projek vs code/birthday-game"
 
 # 1. edit content/content.json pakai VS Code
 # 2. terapkan
@@ -48,6 +48,10 @@ Di luar `"z"`, ada `"outside"`:
 | Footer layar judul | `outside.titleFooter` |
 | Judul tab browser | `outside.htmlTitle` |
 | Deskripsi untuk mesin pencari | `outside.metaDescription` |
+| Tulisan banner di atas pohon | `outside.treeBanner` |
+
+Catatan: dulu tulisan banner ini hardcoded di bundle, jadi nggak bisa diedit dari
+JSON. Sekarang tinggal ganti `outside.treeBanner`, sama seperti kalimat lainnya.
 
 ---
 

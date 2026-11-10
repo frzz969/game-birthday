@@ -1,8 +1,8 @@
 {
   "_readme": "SEMUA kalimat game ada di sini. Edit, lalu jalankan: node tools/patch.mjs",
   "_panduan": {
-    "z": "Isi cerita lengkap: judul, nama, surat, harapan, caption foto/lagu, dialog Moci. Placeholder seperti {recipient} {sender} {left} {next} JANGAN dihapus â€” itu diisi otomatis oleh game.",
-    "outside": "Teks di luar objek cerita: badge judul, footer, judul tab browser, meta description.",
+    "z": "Isi cerita lengkap: judul, nama, surat, harapan, caption foto/lagu, dialog Moci. Placeholder seperti {recipient} {sender} {left} {next} JANGAN dihapus — itu diisi otomatis oleh game.",
+    "outside": "Teks di luar objek cerita: badge judul, footer, judul tab browser, meta description, banner di atas pohon.",
     "theme": "Set enabled:false untuk mematikan lapisan tema warna."
   },
   "z": {
@@ -111,11 +111,11 @@
       "name": "Moci",
       "controls": {
         "touch": [
-          "Jalan pakai tombol â† â†’, terus lompat pakai tombol â†‘.",
+          "Jalan pakai tombol ← →, terus lompat pakai tombol ↑.",
           "Ketuk E di dekat benda yang berkilau. Santai aja, nggak usah buru-buru yaa!"
         ],
         "keys": [
-          "Jalan pakai A/D atau â† â†’, terus lompat pakai SPASI.",
+          "Jalan pakai A/D atau ← →, terus lompat pakai SPASI.",
           "Tekan E di dekat benda yang berkilau. Santai aja, nggak usah buru-buru yaa!"
         ]
       },
@@ -173,7 +173,8 @@
   },
   "outside": {
     "welcomeSeparator": ">",
-    "titleFooter": "Â© 2026 FARAZ GAMTENK Â· UNTUK ISTIIII",
+    "treeBanner": "HAPPY BIRTHDAY, ISTIII",
+    "titleFooter": "© 2026 FARAZ GAMTENK · UNTUK ISTIIII",
     "htmlTitle": "Our Little Birthday Adventure",
     "metaDescription": "Our Little Birthday Adventure: game 8-bit kecil dari Faraz gamtenk, khusus buat Istii. Happy birthday!"
   },

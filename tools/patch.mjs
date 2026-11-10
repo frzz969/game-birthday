@@ -29,6 +29,9 @@ const { z, outside, theme } = content;
 
 if (!z || typeof z !== 'object') throw new Error('content.json: bagian "z" tidak ada.');
 if (!outside) throw new Error('content.json: bagian "outside" tidak ada.');
+if (typeof outside.treeBanner !== 'string' || outside.treeBanner.trim() === '') {
+  throw new Error('content.json: "outside.treeBanner" tidak ada atau kosong — banner tidak boleh disuntik "undefined".');
+}
 
 const q = JSON.stringify;
 
@@ -94,6 +97,13 @@ const rules = [
     find: 'ANNIVERSARY',
     replace: 'BIRTHDAY',
     expect: 2,
+  },
+  {
+    file: 'bundle',
+    label: 'outside.treeBanner (banner di atas pohon)',
+    find: '"HAPPY BIRTHDAY, MY LOVE"',
+    replace: q(outside.treeBanner),
+    expect: 1,
   },
   {
     file: 'bundle',
