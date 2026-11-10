@@ -123,6 +123,13 @@ const rules = [
     replace: 'Your longtime bro,',
     expect: 1,
   },
+  {
+    file: 'bundle',
+    label: 'ending-wish "Happy birthday, Istii" -> "Happy birthday, Istiii"',
+    find: '`Happy birthday, ${Z.recipient} \u2665`',
+    replace: '`Happy birthday, Istiii`',
+    expect: 1,
+  },
 ];
 
 // Kata yang tidak boleh tersisa di hasil akhir.
