@@ -36,6 +36,8 @@ if (typeof outside.replyMeUrl !== 'string' || outside.replyMeUrl.trim() === '') 
   throw new Error('content.json: "outside.replyMeUrl" tidak ada atau kosong — tombol Reply Me tidak boleh disuntik "undefined".');
 }
 
+const replyMeHref = outside.replyMeUrl + (outside.replyMeMessage ? '?text=' + encodeURIComponent(outside.replyMeMessage) : '');
+
 const q = JSON.stringify;
 
 // --- batas objek cerita di bundle ---
@@ -112,7 +114,7 @@ const rules = [
     file: 'bundle',
     label: 'ending-links: tambah tombol Reply Me (di bawah, ~300px)',
     find: 'children:"Kredit \u25b8"})]})]})]}),c.jsxs("figure",',
-    replace: 'children:"Kredit \u25b8"})]}) , c.jsx("a",{className:"secondary reply-me",href:' + q(outside.replyMeUrl) + ',target:"_blank",rel:"noopener noreferrer",style:{width:"300px",textAlign:"center",marginTop:"8px",color:"#302761"},children:"Reply Me"}) ]})]}),c.jsxs("figure",',
+    replace: 'children:"Kredit \u25b8"})]}) , c.jsx("a",{className:"secondary reply-me",href:' + q(replyMeHref) + ',target:"_blank",rel:"noopener noreferrer",style:{width:"300px",textAlign:"center",marginTop:"8px",color:"#302761"},children:"Reply Me"}) ]})]}),c.jsxs("figure",',
     expect: 1,
   },
   {
