@@ -112,7 +112,7 @@ const rules = [
     file: 'bundle',
     label: 'ending-links: tambah tombol Reply Me (full-width, centered)',
     find: 'children:"Kredit \u25b8"})]})',
-    replace: 'children:"Kredit \u25b8"}),c.jsx("a",{className:"secondary reply-me",href:' + q(outside.replyMeUrl) + ',target:"_blank",rel:"noopener noreferrer",style:{display:"block",width:"100%",textAlign:"center",marginTop:"8px"},children:"Reply Me"})]})',
+    replace: 'children:"Kredit \u25b8"}),c.jsx("a",{className:"secondary reply-me",href:' + q(outside.replyMeUrl) + ',target:"_blank",rel:"noopener noreferrer",style:{display:"block",width:"100%",boxSizing:"border-box",textAlign:"center",marginTop:"8px"},children:"Reply Me"})]})',
     expect: 1,
   },
   {
